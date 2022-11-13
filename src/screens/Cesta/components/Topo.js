@@ -1,4 +1,4 @@
-import { Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, Dimensions } from 'react-native';
 import { Texto } from '../../../components/Texto';
 
 import topo from "../../../../assets/topo.png";
@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     topo: {
         width: '100%',
         height: 578 / 768 * width,
-        fontFamily: 'Montserrat'
     },
     title: {
         width: '100%',
