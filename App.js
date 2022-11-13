@@ -1,4 +1,5 @@
-import { StatusBar, SafeAreaView, View } from 'react-native';
+import { StatusBar, SafeAreaView } from 'react-native';
+import AppLoading from "expo-app-loading";
 import { 
   useFonts,
   Montserrat_400Regular,
@@ -15,7 +16,7 @@ export default function App() {
   });
 
   if (!fontLoaded) {
-    return <View />
+    return <AppLoading />
   }
 
   return (
