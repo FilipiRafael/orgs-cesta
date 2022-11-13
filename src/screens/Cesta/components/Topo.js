@@ -5,11 +5,11 @@ import topo from "../../../../assets/topo.png";
 
 const width = Dimensions.get('screen').width;
 
-export function Topo() {
+export function Topo({ titulo }) {
     return (
         <>
             <Image source={topo} style={styles.topo} />
-            <Texto style={styles.title}>Detalhe da cesta</Texto>
+            <Texto style={styles.title}>{titulo}</Texto>
         </>
     )
 }
@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
         padding: 16,
-        top: '15%'
+        top: '10%'
     }
 });
