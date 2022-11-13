@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      <StatusBar />
+      <StatusBar barStyle='dark-content' />
       <Cesta {...mock} />
     </SafeAreaView>
   );
