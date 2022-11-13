@@ -1,4 +1,5 @@
 import { Image, StyleSheet, Dimensions, Text, View } from "react-native";
+import { Texto } from '../components/Texto';
 import topo from "../../assets/topo.png";
 import logo from "../../assets/logo.png";
 
@@ -8,18 +9,18 @@ export function Cesta() {
     return (
         <>
             <Image source={topo} style={styles.topo} />
-            <Text style={styles.title}>Detalhe da cesta</Text>
+            <Texto style={styles.title}>Detalhe da cesta</Texto>
 
             <View style={styles.cesta}>
-                <Text style={styles.nome}>Cesta de verduras</Text>
+                <Texto style={styles.nome}>Cesta de verduras</Texto>
                 <View style={styles.fazenda}>
                     <Image source={logo} style={styles.imagemFazenda} />
-                    <Text style={styles.nomeFazenda}>Jenny Jack Farm</Text>
+                    <Texto style={styles.nomeFazenda}>Jenny Jack Farm</Texto>
                 </View>
-                <Text style={styles.descricao}>
+                <Texto style={styles.descricao}>
                     Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha.
-                </Text>
-                <Text style={styles.preco}>R$ 40,00</Text>
+                </Texto>
+                <Texto style={styles.preco}>R$ 40,00</Texto>
             </View>
         </>
     )
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
         padding: 16,
-        top: '15%'
+        top: '10%'
     },
     cesta: {
         paddingVertical: 8,
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
         color: '#464646',
         fontSize: 26,
         lineHeight: 42,
+        fontWeight: 'bold',
         fontFamily: 'MontserratBold'
     },
     fazenda: {
