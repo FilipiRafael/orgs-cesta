@@ -6,7 +6,7 @@ import logo from "../../../assets/logo.png";
 export function Cesta() {
     return (
         <>
-            {/* <Topo /> */}
+            <Topo />
 
             <View style={styles.cesta}>
                 <Texto style={styles.nome}>Cesta de verduras</Texto>
