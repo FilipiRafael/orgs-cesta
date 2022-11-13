@@ -1,15 +1,12 @@
-import { Image, StyleSheet, Dimensions, Text, View } from "react-native";
-import { Texto } from '../components/Texto';
-import topo from "../../assets/topo.png";
-import logo from "../../assets/logo.png";
-
-const width = Dimensions.get('screen').width;
+import { Image, StyleSheet, View } from "react-native";
+import { Topo } from './components/Topo';
+import { Texto } from '../../components/Texto';
+import logo from "../../../assets/logo.png";
 
 export function Cesta() {
     return (
         <>
-            <Image source={topo} style={styles.topo} />
-            <Texto style={styles.title}>Detalhe da cesta</Texto>
+            {/* <Topo /> */}
 
             <View style={styles.cesta}>
                 <Texto style={styles.nome}>Cesta de verduras</Texto>
@@ -27,22 +24,6 @@ export function Cesta() {
 }
 
 const styles = StyleSheet.create({
-    topo: {
-        width: '100%',
-        height: 578 / 768 * width,
-        fontFamily: 'Montserrat'
-    },
-    title: {
-        width: '100%',
-        position: 'absolute',
-        textAlign: 'center',
-        fontSize: 16,
-        lineHeight: 26,
-        color: 'white',
-        fontWeight: 'bold',
-        padding: 16,
-        top: '10%'
-    },
     cesta: {
         paddingVertical: 8,
         paddingHorizontal: 16
@@ -52,7 +33,6 @@ const styles = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         fontWeight: 'bold',
-        fontFamily: 'MontserratBold'
     },
     fazenda: {
         flexDirection: 'row',
@@ -66,7 +46,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: 'MontserratRegular'
     },
     descricao: {
         color: '#A3A3A3',
